@@ -1,0 +1,26 @@
+Linux and Unix Notes
+
+open source
+shell scripting and os management
+directories use a / slash
+partitioning is different than in windows
+root begins with a / instead of a letter
+
+linux is more popular server os than windows	
+	lighter
+	faster
+	less expensive
+	
+touch	makes a new file
+mkdir	makes a new directory
+rm		remove
+cp		copy
+mv		move a file (this is also how you rename)
+grep	search for contents
+cat		print the contents of a file
+ls		list files and directories (ex: ls -R /usr | grep *.txt)
+echo	print contents (from a file, into a file, or just to stdout) (ex: echo 'here is something' >> something.txt)
+su		provides super user login
+chmod	change the permission of a file
+
+linux kernel	base portion of the linux operating system (what all distributions build off of)
