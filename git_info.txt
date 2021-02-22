@@ -19,5 +19,5 @@ git push		-		synchronizes changes to another repository location
 git pull		-		pull changes from a repository location and apply them on the local repository (git fetch and merge combined)
 git fetch		-		pulls changes from a repository location and does not apply them
 git merge		-		applies changes to a local repository
-git branch		-		how you can operate with branches
+git branch		-		how you can operate with branches [ex:get branch nicholas-wickham]
 git checkout	-		switch between branches
