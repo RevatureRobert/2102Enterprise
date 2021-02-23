@@ -7,7 +7,4 @@ import com.crunch.people.User;
  */
 public class MembershipService {
 
-    public User makeUser(String username, String password, String phoneNumber, String email){
-        return new User(username, password, phoneNumber, email);
-    }
 }
