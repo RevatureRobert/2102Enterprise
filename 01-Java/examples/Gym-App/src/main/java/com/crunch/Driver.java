@@ -2,6 +2,8 @@ package com.crunch;
 
 import com.crunch.ui.MembershipMenu;
 
+import java.util.Scanner;
+
 public class Driver {
 
     public static void main(String[] args) {
@@ -19,7 +21,19 @@ public class Driver {
 //        System.out.println("finished");
 
         MembershipMenu mm = new MembershipMenu();
-        mm.CreateUserMenu();
+        Scanner scan = new Scanner(System.in);
+        boolean continueLoop = true;
+        do {
+            System.out.println("do you want to create a new user? y/n");
+            String answer = scan.nextLine();
+            if(answer.equals("n")){
+                continueLoop = false;
+            } else if(answer.equals("y")) {
+                mm.CreateUserMenu();
+            } else {
+
+            }
+        } while(continueLoop);
 
     }
 
