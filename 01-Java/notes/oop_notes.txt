@@ -1,0 +1,15 @@
+OOP
+Object Oriented Programming
+
+four pillars of OOP
+	Polymorphism			-		The ability to take different forms
+	Encapsulation			-		The ability to protect data
+	Abstraction				-		The hiding of implementation
+	Inheritance				-		The ability to inherit traits from an ancestor
+APIE
+
+
+classes and objects
+A class is a blueprint for an object. An object is known as an instance of that class.
+	When we create an instance, it will have the properties (states and behaviors) defined in that class.
+
