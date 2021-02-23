@@ -1,0 +1,23 @@
+git
+
+git is a version control system
+	distributed, not local
+
+git creates patch sets of your files
+	you have an initial file that git keeps track of
+	every line you change is an entry into a patch set
+	these patch sets are your versions and they are applied to
+		the file to create the document of that version
+
+commands
+git clone		-		clones a repository from somewhere else and puts it on your local system
+git init		-		creates a new repository in that directory
+git status		-		gives the status of your patch sets
+git add <file>	-		add changes to git's staging stage
+git commit		-		take the staged changes and create a patch set
+git push		-		synchronizes changes to another repository location
+git pull		-		pull changes from a repository location and apply them on the local repository (git fetch and merge combined)
+git fetch		-		pulls changes from a repository location and does not apply them
+git merge		-		applies changes to a local repository
+git branch		-		how you can operate with branches
+git checkout	-		switch between branches
