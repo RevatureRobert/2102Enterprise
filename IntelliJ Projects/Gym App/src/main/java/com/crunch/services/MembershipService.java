@@ -6,9 +6,9 @@ import com.crunch.people.User;
     A service to perform membership tasks
  */
 
-public class Membership {
+public class MembershipService {
 
-    public User makeUser(){
-        return new User();
+    public User makeUser(String username, String password, String phoneNumber, String email){
+        return new User(username, password, phoneNumber, email);
     }
 }
