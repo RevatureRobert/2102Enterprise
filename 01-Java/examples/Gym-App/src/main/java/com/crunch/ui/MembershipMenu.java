@@ -1,7 +1,5 @@
 package com.crunch.ui;
 
-import com.crunch.people.User;
-import com.crunch.services.MembershipService;
 import com.crunch.services.UserService;
 
 import java.util.Scanner;
@@ -23,22 +21,23 @@ public class MembershipMenu {
         Scanner scan = new Scanner(System.in);
 
         UserService us = new UserService();
-        boolean exist = false;
         System.out.println("====Welcome to Crunch====");
         String username = "";
+        // hey something is wrong
         do{
             System.out.println("provide username");
             username = scan.nextLine();
-            exist = us.doesUsernameExist(username);
-        } while(!exist);
+        } while(us.doesUsernameExist(username));
         System.out.println("provide password");
+        // TODO: check phone number
         String password = scan.nextLine();
         System.out.println("provide phone number");
+        // TODO: check email
         String phoneNumber = scan.nextLine();
         System.out.println("provide email");
         String email = scan.nextLine();
-        MembershipService mem = new MembershipService();
-        User u = mem.makeUser(username, password, phoneNumber, email);
-        System.out.println(u);
+        System.out.println(us.makeUser(username, password, phoneNumber, email) ?
+                        "successfully made "+username :
+                        "cancelled registration");
     }
 }

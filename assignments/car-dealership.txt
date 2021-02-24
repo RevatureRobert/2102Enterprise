@@ -16,6 +16,8 @@
 5. All input is received using the java.util.Scanner class.
 6. Log4j is implemented to log events to a file.
 7. A minimum of one (1) JUnit test is written to test some functionality.
+8. You cannot use anything from java collections. All data structures must be self made.
+9. Postgresql data base will be hosted using AWS RDS.
 
 
 ## User Stories
