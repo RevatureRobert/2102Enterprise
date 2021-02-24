@@ -5,11 +5,11 @@ import com.crunch.services.UserService;
 
 import java.util.Scanner;
 
-public class LoginMenu {
+public class LoginMenu extends AbstractMenu {
 
 
-    public void showMenu(){
-        Scanner scan = new Scanner(System.in);
+    @Override
+    public void showMenu(Scanner scan){
 
         for(int i =0; i <= 2; i++) {
             System.out.println("username: ");
@@ -21,6 +21,8 @@ public class LoginMenu {
                 System.out.println("login failed");
             } else {
                 System.out.println("congratulations, have a great virtual workout");
+                MemberMenu mm = new MemberMenu(u);
+                mm.showMenu(scan);
                 break;
             }
         }
