@@ -10,6 +10,13 @@ import com.crunch.model.User;
  * TODO: only members can schedule workouts
  * TODO: holiday schedule or other closures
  * TODO: Notify members of membership expiration
+ *
+ * Checked in array should: not contain duplicates, be able to
+ *      view a list of all checked in users, move users from index
+ *      to index, time limit on being in the array, we should not
+ *      care about the order they are added in, should be of static
+ *      size and have a maximum amount, index should always point to
+ *      the last valid object, and should never have gaps.
  */
 public class CalendarService {
 
