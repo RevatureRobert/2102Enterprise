@@ -1,6 +1,6 @@
 package com.crunch.services;
 
-import com.crunch.people.User;
+import com.crunch.model.User;
 
 
 /**
@@ -8,6 +8,15 @@ import com.crunch.people.User;
  *      There should not be duplicates, if we reach the max size then it should
  *      be expandable, index should always point to the last valid object, and
  *      should never have gaps.
+ *
+ *
+ // TODO: change password
+ // TODO: delete users
+ // TODO: update to members
+ // TODO: update information
+ // TODO: schedule workout times/sessions
+
+
  */
 public class UserService {
 
@@ -19,22 +28,16 @@ public class UserService {
 
     public boolean doesUsernameExist(String username){
         // O(n) time complexity O(1) space complexity
-        System.out.println(users.length);
-        if(currentIndex > -1) {
-            for (int i = 0; i < currentIndex; i++) {
-                if (users[i].getUsername().equals(username)) {
-                    return true;
-                }
-            }
-        }
-        return false;
+        return findUserByUsername(username) != null;
     }
 
     public User findUserByUsername(String username){
         // O(n) time complexity O(1) space complexity
-        for(int i = 0; i < users.length; i++){
-            if(users[i].getUsername().equals(username)){
-                return users[i];
+        if(currentIndex > -1) {
+            for (int i = 0; i <= currentIndex; i++) {
+                if (users[i].getUsername().equals(username)) {
+                    return users[i];
+                }
             }
         }
         return null;
@@ -55,4 +58,5 @@ public class UserService {
         }
         return false;
     }
+
 }

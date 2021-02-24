@@ -1,7 +1,5 @@
 package com.crunch.ui;
 
-import com.crunch.people.User;
-import com.crunch.services.MembershipService;
 import com.crunch.services.UserService;
 
 import java.util.Scanner;
