@@ -1,7 +1,5 @@
 package com.crunch.ui;
 
-import com.crunch.people.User;
-import com.crunch.services.MembershipService;
 import com.crunch.services.UserService;
 
 import java.util.Scanner;
@@ -17,10 +15,9 @@ import java.util.Scanner;
  *
  */
 
-public class MembershipMenu {
+public class SignUpMenu extends AbstractMenu{
 
-    public void CreateUserMenu(){
-        Scanner scan = new Scanner(System.in);
+    public void showMenu(Scanner scan){
 
         UserService us = new UserService();
         System.out.println("====Welcome to Crunch====");

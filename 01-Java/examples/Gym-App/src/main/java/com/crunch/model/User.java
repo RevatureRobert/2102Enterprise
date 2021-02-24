@@ -1,4 +1,7 @@
-package com.crunch.people;
+package com.crunch.model;
+
+import java.util.Arrays;
+import java.util.Objects;
 
 /**
  * Access Modifiers
@@ -19,8 +22,7 @@ package com.crunch.people;
 
 public class User extends Object {
 
-    // TODO: Make an integer to represent different types of members
-    private boolean member;
+    private MembershipType membership;
     private String username;
     private String password;
     // TODO: make a data structure to define the available and interested activities
@@ -28,12 +30,12 @@ public class User extends Object {
     private String phoneNumber;
     private String email;
 
-    public boolean isMember() {
-        return member;
+    public MembershipType getMembership() {
+        return membership;
     }
 
-    public void setMember(boolean member) {
-        this.member = member;
+    public void setMembership(MembershipType membership) {
+        this.membership = membership;
     }
 
     public String getUsername() {
@@ -80,8 +82,8 @@ public class User extends Object {
         this.email = email;
     }
 
-    public User(boolean member, String username, String password, String[] activities, String phoneNumber, String email) {
-        this.member = member;
+    public User(MembershipType member, String username, String password, String[] activities, String phoneNumber, String email) {
+        this.membership = member;
         this.username = username;
         this.password = password;
         this.activities = activities;
@@ -108,5 +110,18 @@ public class User extends Object {
         return "Username = " + username;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        User user = (User) o;
+        return membership == user.membership && Objects.equals(username, user.username) && Objects.equals(password, user.password) && Arrays.equals(activities, user.activities) && Objects.equals(phoneNumber, user.phoneNumber) && Objects.equals(email, user.email);
+    }
 
+    @Override
+    public int hashCode() {
+        int result = Objects.hash(membership, username, password, phoneNumber, email);
+        result = 31 * result + Arrays.hashCode(activities);
+        return result;
+    }
 }

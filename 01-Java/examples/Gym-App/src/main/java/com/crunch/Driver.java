@@ -1,6 +1,7 @@
 package com.crunch;
 
-import com.crunch.ui.MembershipMenu;
+import com.crunch.ui.LoginMenu;
+import com.crunch.ui.SignUpMenu;
 
 import java.util.Scanner;
 
@@ -20,18 +21,19 @@ public class Driver {
 //
 //        System.out.println("finished");
 
-        MembershipMenu mm = new MembershipMenu();
+        SignUpMenu mm = new SignUpMenu();
+        LoginMenu lm = new LoginMenu();
         Scanner scan = new Scanner(System.in);
         boolean continueLoop = true;
         do {
-            System.out.println("do you want to create a new user? y/n");
+            System.out.println("sign up, login or exit?");
             String answer = scan.nextLine();
-            if(answer.equals("n")){
+            if(answer.equalsIgnoreCase("exit")){
                 continueLoop = false;
-            } else if(answer.equals("y")) {
-                mm.CreateUserMenu();
-            } else {
-
+            } else if(answer.equalsIgnoreCase("sign up")) {
+                mm.showMenu(scan);
+            } else if(answer.equalsIgnoreCase("login")) {
+                lm.showMenu(scan);
             }
         } while(continueLoop);
 
