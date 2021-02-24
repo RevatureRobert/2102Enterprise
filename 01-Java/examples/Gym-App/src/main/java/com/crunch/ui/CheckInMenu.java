@@ -1,8 +1,10 @@
 package com.crunch.ui;
 
+import com.crunch.exception.CurrentlyCheckedInException;
 import com.crunch.model.User;
 import com.crunch.services.CalendarService;
 
+import java.util.Currency;
 import java.util.Scanner;
 
 public class CheckInMenu extends AbstractMenu{
@@ -19,7 +21,11 @@ public class CheckInMenu extends AbstractMenu{
         } else {
             System.out.println(cs.numberOfSpotsAvailable() + " number of spots available");
             if(ui.yOrN(scan, "would you like to check in")){
-                System.out.println(cs.checkIn(u));
+                try {
+                    System.out.println(cs.checkIn(u));
+                } catch (CurrentlyCheckedInException e){
+                    System.out.println(e.getMessage());
+                }
             } else {
                 System.out.println("sit tight sugar");
                 return;

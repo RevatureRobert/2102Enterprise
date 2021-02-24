@@ -1,5 +1,6 @@
 package com.crunch.services;
 
+import com.crunch.exception.CurrentlyCheckedInException;
 import com.crunch.model.User;
 
 /**
@@ -29,14 +30,15 @@ public class CalendarService {
 
 
     //TODO: continue with this method and finish implementation.
-    public status checkIn(User u) {
+    public status checkIn(User u) throws CurrentlyCheckedInException{
         if (currentlyCheckedIn <= 2 ) {
             if (!isUserCheckedIn(u)) {
                 checkedIn[currentlyCheckedIn] = u;
                 currentlyCheckedIn++;
                 return status.SUCCESSFULLY_CHECKED_IN;
             } else {
-                return status.ALREADY_CHECKED_IN;
+//                return status.ALREADY_CHECKED_IN;
+                throw new CurrentlyCheckedInException("The User is already checked in");
             }
         }
         return status.FULL_GYM;
@@ -46,7 +48,7 @@ public class CalendarService {
     public int getCheckedInPosition(User u) {
         int i = 0;
         for (; i <= currentlyCheckedIn; i++) {
-            if (checkedIn[i].equals(u)) {
+            if (checkedIn[i] != null && checkedIn[i].equals(u)) {
                 return i;
             }
         }

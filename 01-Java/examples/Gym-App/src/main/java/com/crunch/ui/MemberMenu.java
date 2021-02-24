@@ -14,11 +14,13 @@ public class MemberMenu extends AbstractMenu {
 
         System.out.println("1. check in");
         System.out.println("2. exit");
-        int answer = scan.nextInt();
-        switch (answer){
-            case 1:
+        switch (scan.nextLine()){
+            case "1":
                 new CheckInMenu(u).showMenu(scan);
                 break;
+            default:
+                showMenu(scan);
+                return;
         }
     }
 
