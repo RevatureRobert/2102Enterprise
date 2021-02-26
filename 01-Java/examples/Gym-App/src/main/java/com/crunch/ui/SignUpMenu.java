@@ -15,10 +15,9 @@ import java.util.Scanner;
  *
  */
 
-public class MembershipMenu {
+public class SignUpMenu extends AbstractMenu{
 
-    public void CreateUserMenu(){
-        Scanner scan = new Scanner(System.in);
+    public void showMenu(Scanner scan){
 
         UserService us = new UserService();
         System.out.println("====Welcome to Crunch====");
