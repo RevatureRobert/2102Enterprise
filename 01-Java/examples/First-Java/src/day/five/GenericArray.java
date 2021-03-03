@@ -32,7 +32,7 @@ public class GenericArray<T> {
         GenericArray<Integer> intArr = new GenericArray<>(new Integer[10]);
 
         intArr.add(7);
-        intArr.add(new Object());
+//        intArr.add(new Object());
 //        intArr.add("this is a string");  //compiler error
         Object i = intArr.get(1);
 
