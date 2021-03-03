@@ -180,6 +180,19 @@ select * from table_user;
  * 		commit will commit the changes and end the transaction, sending the changes to the 
  * 			db for persistent alterations.
  * 
+ * 
+ * 	Properties of transactions
+ * 		ACID
+ * 			Atomicity	-	All or nothing, either all of the transaction 
+ * 								persists, or none of it does
+ * 			Consistency	-	The state of the db will change and persist through
+ * 								transactions
+ * 			Isolation	-	Isolation levels determine how concurrent transactions
+ * 								interact
+ * 			Durability	-	Information in the database will be in there and remain
+ * 								until removed; data cannot be lost due to unnatural 
+ * 								reasons.
+ * 
  */
 
 begin;
@@ -196,6 +209,34 @@ end
 delete from colors where color = 'blurple';
 
 select * from colors;
+
+
+
+create schema cool_stuff;
+
+create user robert with password 'password';
+
+
+/*
+ * DCL
+ * 	Data Control Language
+ * 		keywords: grant and revoke
+ * 
+ */
+grant all privileges on schema cool_stuff to robert;
+
+show search_path;
+
+set search_path to "$user",public,cool_stuff;
+set search_path to "$user",public;
+
+create table cool_stuff.animal(id Integer);
+
+select * from cool_stuff.animal;
+
+drop table cool_stuff.animal;
+
+select * from "Album";
 
 
 
