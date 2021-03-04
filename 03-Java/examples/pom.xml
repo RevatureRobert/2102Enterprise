@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>Maven-Example</artifactId>
+    <version>1.1</version>
+
+    <name>Maven Example</name>
+    <description>An example of why maven is so friggin awezome ${hammer-time} ${project.version} ${project.groupId}
+        ${project.modelVersion}
+    </description>
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+        <hammer-time>1:00AM</hammer-time>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.2.8</version>
+        </dependency>
+        <dependency>
+            <groupId>org.reflections</groupId>
+            <artifactId>reflections</artifactId>
+            <version>0.9.12</version>
+        </dependency>
+    </dependencies>
+</project>
+
+
+<!--
+maven commands: mvn <lifecycle> <phase>:<goals>
+
+        maven lifecycle     build                       delete target           documentation site
+                        default(build)                 clean                   site
+                        validate                        clean                   site
+                        compile
+                        test-validate
+                        test-compile
+                        test
+                        package | ear:ear | jar:jar | war:war | pom:pom
+                        install
+                        deploy
+
+
+
+-->
