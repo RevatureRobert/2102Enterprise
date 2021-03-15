@@ -1,4 +1,4 @@
-package dev.enterprise.problems;
+package dev.enterprise.problems.deadlock;
 
 import java.time.LocalTime;
 
@@ -48,7 +48,7 @@ public class Deadlock {
         System.out.println("main completed");
 
 
-//        ReadAndWrite r = new ReadAndWrite();
+//        ReadAndWriteLockExample r = new ReadAndWriteLockExample();
 //        Thread t3 = new Thread(() -> {
 //            for (int i = 0; i < 500; i++) System.out.println(r.getX());
 //        });

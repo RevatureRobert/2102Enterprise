@@ -1,6 +1,6 @@
 package dev.enterprise.threads;
 
-import dev.enterprise.problems.RaceCondition;
+import dev.enterprise.problems.race.RaceCondition;
 
 public class CustomThread extends Thread{
 

@@ -1,6 +1,6 @@
 package dev.enterprise.problems;
 
-public class ReadAndWrite {
+public class ReadAndWriteLockExample {
 
     Object keyReadX = new Object();
     Object keyReadY = new Object();

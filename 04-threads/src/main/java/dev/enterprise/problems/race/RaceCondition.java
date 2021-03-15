@@ -1,4 +1,4 @@
-package dev.enterprise.problems;
+package dev.enterprise.problems.race;
 
 import dev.enterprise.threads.CustomThread;
 
