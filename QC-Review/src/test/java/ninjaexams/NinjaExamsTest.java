@@ -11,7 +11,7 @@ public class NinjaExamsTest {
     @Test
     public void getHealthTest() {
         Ninja ninja = new Ninja(100);
-        assertEquals(ninja.getHealth(), 10);
+        assertEquals(ninja.getHealth(), 100);
         assertNotEquals(80, ninja.getHealth());
     }
 
