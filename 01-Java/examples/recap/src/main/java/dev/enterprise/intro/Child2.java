@@ -41,7 +41,7 @@ public class Child2 extends Person2 {
 //        List<String> list = p.something();
 
 
-        
+
     }
 
 
