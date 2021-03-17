@@ -18,4 +18,8 @@ public class Shuriken {
     public void setDamage(int damage) {
         this.damage = damage;
     }
+
+    public String yeet(){
+        return "I have been yeeted.";
+    }
 }

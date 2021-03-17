@@ -17,6 +17,10 @@ public class Ninja {
         this.health = health;
     }
 
+    public Ninja(Shuriken shuriken) {
+        this.shuriken = shuriken;
+    }
+
     public Ninja(int health, String name, ChakraNature chakraNature, String village, Shuriken shuriken) {
         this.health = health;
         this.name = name;
@@ -63,5 +67,9 @@ public class Ninja {
 
     public void setShuriken(Shuriken shuriken) {
         this.shuriken = shuriken;
+    }
+
+    public String attack(){
+        return this.shuriken.yeet();
     }
 }

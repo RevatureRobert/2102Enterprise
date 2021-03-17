@@ -36,10 +36,11 @@
             <version>5.2.0</version>
             <scope>test</scope>
         </dependency>
+        <!-- this dependency is required. see the below build to generate the coverage report.-->
         <dependency>
             <groupId>org.jacoco</groupId>
             <artifactId>jacoco-maven-plugin</artifactId>
-            <version>0.8.6</version>
+            <version>0.7.7.201606060606</version>
         </dependency>
         <dependency>
             <groupId>org.mockito</groupId>
@@ -47,11 +48,36 @@
             <version>2.0.2-beta</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>org.reflections</groupId>
-            <artifactId>reflections</artifactId>
-            <version>0.9.12</version>
-        </dependency>
     </dependencies>
-
+    <!-- use the mvn clean package command to generate the coverage report-->
+    <!-- the report will be in the location listed below in the destFile tag-->
+    <!-- select Run > Show Coverage Data in IntelliJ idea to generate the report-->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>0.7.7.201606060606</version>
+                <configuration>
+                    <destFile>${basedir}/target/coverage-reports/jacoco-unit.exec</destFile>
+                    <dataFile>${basedir}/target/coverage-reports/jacoco-unit.exec</dataFile>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>jacoco-initialize</id>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>jacoco-site</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 </project>
