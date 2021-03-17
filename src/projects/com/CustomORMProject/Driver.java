@@ -1,6 +1,6 @@
-package com.CustomORM;
+package projects.com.CustomORMProject;
 
-import com.CustomORM.config.DatabaseConfig;
+import projects.com.CustomORMProject.config.DatabaseConfig;
 
 public class Driver {
 

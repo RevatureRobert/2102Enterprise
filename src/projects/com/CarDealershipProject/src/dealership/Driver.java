@@ -1,11 +1,11 @@
-package com.CarDealershipProject.src.dealership;
+package projects.com.CarDealershipProject.src.dealership;
 
-import com.CarDealershipProject.src.dealership.database.ConnectionUtil;
-import com.CarDealershipProject.src.dealership.model.DealershipUser;
-import com.CarDealershipProject.src.dealership.service.CustomerService;
-import com.CarDealershipProject.src.dealership.service.EmployeeService;
-import com.CarDealershipProject.src.dealership.service.UserService;
-import com.CarDealershipProject.src.dealership.ui.Login;
+import projects.com.CarDealershipProject.src.dealership.database.ConnectionUtil;
+import projects.com.CarDealershipProject.src.dealership.model.DealershipUser;
+import projects.com.CarDealershipProject.src.dealership.service.CustomerService;
+import projects.com.CarDealershipProject.src.dealership.service.EmployeeService;
+import projects.com.CarDealershipProject.src.dealership.service.UserService;
+import projects.com.CarDealershipProject.src.dealership.ui.Login;
 
 import java.sql.Connection;
 import java.sql.SQLException;

@@ -1,4 +1,4 @@
-package com.CustomORM.config;
+package projects.com.CustomORMProject.config;
 
 public class DatabaseConfig {
 

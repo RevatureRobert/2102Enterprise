@@ -1,4 +1,4 @@
-package com.CarDealershipProject.src.dealership.database;
+package projects.com.CarDealershipProject.src.dealership.database;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

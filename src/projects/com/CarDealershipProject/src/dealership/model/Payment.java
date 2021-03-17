@@ -1,4 +1,4 @@
-package com.CarDealershipProject.src.dealership.model;
+package projects.com.CarDealershipProject.src.dealership.model;
 
 import java.util.Objects;
 

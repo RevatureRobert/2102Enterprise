@@ -1,9 +1,9 @@
-package com.CarDealershipProject.src.dealership.service;
+package projects.com.CarDealershipProject.src.dealership.service;
 
-import com.CarDealershipProject.src.dealership.model.DealershipUser;
-import com.CarDealershipProject.src.dealership.model.Offer;
-import com.CarDealershipProject.src.dealership.model.Payment;
-import com.CarDealershipProject.src.dealership.model.Vehicle;
+import projects.com.CarDealershipProject.src.dealership.model.DealershipUser;
+import projects.com.CarDealershipProject.src.dealership.model.Offer;
+import projects.com.CarDealershipProject.src.dealership.model.Payment;
+import projects.com.CarDealershipProject.src.dealership.model.Vehicle;
 
 import java.sql.Connection;
 import java.sql.ResultSet;

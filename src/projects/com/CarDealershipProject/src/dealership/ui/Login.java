@@ -1,7 +1,7 @@
-package com.CarDealershipProject.src.dealership.ui;
+package projects.com.CarDealershipProject.src.dealership.ui;
 
-import com.CarDealershipProject.src.dealership.model.DealershipUser;
-import com.CarDealershipProject.src.dealership.service.UserService;
+import projects.com.CarDealershipProject.src.dealership.model.DealershipUser;
+import projects.com.CarDealershipProject.src.dealership.service.UserService;
 
 import java.sql.Connection;
 import java.util.Scanner;

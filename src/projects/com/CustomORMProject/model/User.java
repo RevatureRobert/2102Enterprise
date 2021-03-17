@@ -1,6 +1,6 @@
-package com.CustomORM.model;
+package projects.com.CustomORMProject.model;
 
-import com.CustomORM.dao.UserDAO;
+import projects.com.CustomORMProject.dao.UserDAO;
 
 public class User implements UserDAO {
 
