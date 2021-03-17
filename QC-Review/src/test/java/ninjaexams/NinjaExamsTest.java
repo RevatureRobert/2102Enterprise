@@ -11,6 +11,8 @@ import org.mockito.*;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 
+import java.util.Queue;
+
 
 public class NinjaExamsTest {
 
