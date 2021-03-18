@@ -1,8 +1,6 @@
-import java.util.ArrayList;
 import java.util.LinkedList;
-import java.util.List;
 
-public class ProducerConsumer {
+public class ProducerConsumerWN {
     LinkedList<Integer> list = new LinkedList<>();
     int capacity = 10;
 
@@ -43,7 +41,7 @@ public class ProducerConsumer {
     }
 
     public static void main(String[] args) throws InterruptedException {
-        ProducerConsumer pc = new ProducerConsumer();
+        ProducerConsumerWN pc = new ProducerConsumerWN();
 
         Thread producer = new Thread(new Runnable() {
             @Override
