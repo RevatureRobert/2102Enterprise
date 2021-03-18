@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="ninja">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="health" type="xs:integer"/>
+                <xs:element name="name" type="xs:string"/>
+                <xs:element name="chakraNature" type="xs:string"/>
+                <xs:element name="village" type="xs:string"/>
+                <xs:element name="shuriken" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
