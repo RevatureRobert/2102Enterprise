@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    <xs:element name="ninja">
-        <xs:complexType>
-            <xs:sequence>
-                <xs:element name="health" type="xs:integer"/>
-                <xs:element name="name" type="xs:string"/>
-                <xs:element name="chakraNature" type="xs:string"/>
-                <xs:element name="village" type="xs:string"/>
-                <xs:element name="shuriken" type="xs:string"/>
-            </xs:sequence>
-        </xs:complexType>
-    </xs:element>
-</xs:schema>
+<njs:schema xmlns:njs="http://www.w3.org/2001/XMLSchema">
+    <njs:element name="ninja">
+        <njs:complexType>
+            <njs:sequence>
+                <njs:element name="health" type="njs:integer"/>
+                <njs:element name="name" type="njs:string"/>
+                <njs:element name="chakraNature" type="njs:string"/>
+                <njs:element name="village" type="njs:string"/>
+                <njs:element name="shuriken" type="njs:string"/>
+            </njs:sequence>
+        </njs:complexType>
+    </njs:element>
+</njs:schema>
+

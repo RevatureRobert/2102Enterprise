@@ -1,14 +1,7 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!DOCTYPE ninja [
-        <!ELEMENT ninja (health, name,chakraNature,village,shuriken)>
-        <!ELEMENT health (#PCDATA)>
-        <!ELEMENT name (#PCDATA)>
-        <!ELEMENT chakraNature (#PCDATA)>
-        <!ELEMENT village (#PCDATA)>
-        <!ELEMENT shuriken (#PCDATA)>
-]>
+<?xml version="1.0" encoding="UTF-8"  ?>
+<ninja xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 
-<ninja>
+        xsi:noNamespaceSchemaLocation="SchemingNinja.xsd">
     <health>
         23
     </health>
@@ -18,3 +11,4 @@
     <shuriken>kunai</shuriken>
 </ninja>
 
+<!--        njs:schemaLocation="file:///C:/Users/nickm/Desktop/GroupWork/2102Enterprise/XMLT/src/main/java/SchemingNinja.xsd">-->
