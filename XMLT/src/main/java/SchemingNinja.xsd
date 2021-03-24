@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<njs:schema xmlns:njs="http://www.w3.org/2001/XMLSchema">
+    <njs:element name="ninja">
+        <njs:complexType>
+            <njs:sequence>
+                <njs:element name="health" type="njs:integer"/>
+                <njs:element name="name" type="njs:string"/>
+                <njs:element name="chakraNature" type="njs:string"/>
+                <njs:element name="village" type="njs:string"/>
+                <njs:element name="shuriken" type="njs:string"/>
+            </njs:sequence>
+        </njs:complexType>
+    </njs:element>
+</njs:schema>
+

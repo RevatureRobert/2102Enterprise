@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"  ?>
+<ninja xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+        xsi:noNamespaceSchemaLocation="SchemingNinja.xsd">
+    <health>
+        23
+    </health>
+    <name>Choji</name>
+    <chakraNature>earth</chakraNature>
+    <village>leaf</village>
+    <shuriken>kunai</shuriken>
+</ninja>
+
+<!--        njs:schemaLocation="file:///C:/Users/nickm/Desktop/GroupWork/2102Enterprise/XMLT/src/main/java/SchemingNinja.xsd">-->

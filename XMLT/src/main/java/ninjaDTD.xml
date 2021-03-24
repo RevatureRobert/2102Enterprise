@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE ninja [
+        <!ELEMENT ninja (health, name,chakraNature,village,shuriken)>
+        <!ELEMENT health (#PCDATA)>
+        <!ELEMENT name (#PCDATA)>
+        <!ELEMENT chakraNature (#PCDATA)>
+        <!ELEMENT village (#PCDATA)>
+        <!ELEMENT shuriken (#PCDATA)>
+]>
+
+<ninja>
+    <health>
+        23
+    </health>
+    <name>Choji</name>
+    <chakraNature>earth</chakraNature>
+    <village>leaf</village>
+    <shuriken>kunai</shuriken>
+</ninja>
+
