@@ -4,7 +4,7 @@
 
 Your first project will be to create a custom object relational mapping (ORM) framework. This framework will allow for a simplified and SQL-free interaction with the relational data source. The requires of the project are purposefully vague, the intention is to allow for you to be creative in your implementation of this framework. There are many ways that this task can be approached, and you are encouraged to explore existing Java ORM implementations in order to get some inspiration. Some suggested features that your ORM can provide are:
 
-1. provide developers the option of file-based and programmatic configuration of entities
+1. provide developers the option of file-based and/or programmatic configuration of entities
 
 2. Programmatic persistence of entities (basic CRUD support)
 
