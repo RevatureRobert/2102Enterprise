@@ -6,7 +6,7 @@ Your first project will be to create a custom object relational mapping (ORM) fr
 
 1. provide developers the option of file-based and/or programmatic configuration of entities
 
-2. Programmatic persistence of entities (basic CRUD support)
+2. Programmatic persistence of entities (basic CRUD support )
 
 3. Basic transaction management (begin, commit, savepoint, rollback)
 
