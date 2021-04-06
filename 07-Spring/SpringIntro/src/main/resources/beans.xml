@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+    <bean class="dev.enterprise.repository.MockJokesRepository" id="repoBean" name="repo mockRepo"/>
+
+<!--    <bean id="mockWhalburg" class="dev.enterprise.service.MockJokesService">-->
+<!--        <property name="repo" ref="repoBean"/>-->
+<!--&lt;!&ndash;        <constructor-arg ref="repoBean" index="0" type="dev.enterprise.repository.MockJokesRepository"/>&ndash;&gt;-->
+<!--    </bean>-->
+
+    <!-- With Spring Bean scope, there are a few different cases
+        singleton (default)                 one instance
+        prototype                           one per bean access
+        session                             one per http session
+        GlobalSession (spring 4)            one for all http sessions
+        WebSocket (spring 5)                one for each websocket
+        Request                             one for each http request
+        Application (spring 5)              one for the servlet context
+     -->
+    <bean class="dev.enterprise.util.MockMelonService" id="iHaveNoIdEither" scope="singleton">
+        <constructor-arg type="java.lang.String" index="0" value="watermelon"/>
+        <constructor-arg type="double" index="1" value="823.976"/>
+        <constructor-arg type="double" index="2" value=".96"/>
+    </bean>
+
+    <bean class="dev.enterprise.service.MockJokesService" id="jokeService" autowire="constructor" />
+
+</beans>
