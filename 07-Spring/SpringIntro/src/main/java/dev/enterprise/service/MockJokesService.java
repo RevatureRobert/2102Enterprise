@@ -47,6 +47,7 @@ public class MockJokesService {
     }
 
     public Map<String, String> getAllJokes() {
+        System.out.println("in the jokes service call.");
         return repo.getAllJokes();
     }
 
