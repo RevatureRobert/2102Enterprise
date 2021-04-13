@@ -1,0 +1,14 @@
+th {
+    border-bottom: 50px;
+    border-color: brown;
+    border-style: solid;
+  }
+  input {
+    display: block;
+  }
+  .hamsterName {
+    background-color: chartreuse;
+  }
+  #uglyPallete {
+    color:darkgoldenrod
+  }

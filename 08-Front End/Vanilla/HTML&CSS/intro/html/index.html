@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!-- html == hypertext markup language -->
+<html lang="EN">
+  <head>
+    <!-- The head is where you put metadata and
+                other information about the document
+             -->
+    <meta charset="UTF-8" />
+    <!-- <script>
+      /*this is javascript for the browser*/
+    </script>
+    <style>
+      /* this is for css [aka styling] 
+        css - cascading style sheet
+      */
+      /* th {
+        border-bottom: 50px;
+        border-color: brown;
+        border-style: solid;
+      }
+      input {
+        display: block;
+      }
+      .hamsterName {
+        background-color: chartreuse;
+      }
+      #uglyPallete {
+        color:darkgoldenrod
+      } */
+    </style> -->
+    <link href="../css/styles.css" type="text/css" rel="stylesheet"/>
+    <!-- 
+                 example of content that could be used in xss attack
+                 <script>
+                    fetch('very malicious code through http')....
+
+                 </script>
+              -->
+    <title>this is our page</title>
+  </head>
+  <body>
+    <!-- 
+            The body is where you put the elements for 
+                the browser to display.
+         -->
+
+    <h1>
+      THIS IS A HEADER. THEY GO 1 THROUGH 6. IF YOU GO BEYOND 6, IT DOESNT CARE
+    </h1>
+
+    <p>THIS IS A PARAGRAPH</p>
+    <b>this is bold</b>
+    <strong>this is strong</strong>
+    <br />
+    <br />
+    <i>italicized</i>
+    <em>emphasized</em>
+
+    <table>
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>name</th>
+          <th>nose</th>
+          <th>sneeze count</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Brandon</td>
+          <td>banana shaped</td>
+          <td>&infin;</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>daniel</td>
+          <td>&#128067;</td>
+          <td>constantly</td>
+        </tr>
+        <tr>
+          <td>2102</td>
+          <td>Richard</td>
+          <td>No One Nose</td>
+          <td>Yes</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- ordered and unorder lists [tags: ol and ul] -->
+    <ul>
+      Potential 2102 hamster names
+      <li class="hamsterName">will-i-run</li>
+      <li class="hamsterName" id="uglyPallete">sauerkraut</li>
+      <li>
+        hamtaro
+        <ol>
+          hamsters that we want to eat
+          <li><strong>What</strong> is this list???????</li>
+        </ol>
+      </li>
+    </ul>
+
+    <!-- 
+      servlet -> /app/something  *.view  *.data
+      request -> /app/something/home.view   forward -> /app/something/home.view
+
+     -->
+
+    <!-- 
+       //js somwhere
+       form.onsubmit(){
+         document.getElementById('auth').value=LocalStorage.getItem('auth-token')
+       }
+      -->
+    <form
+      action="http://localhost:8080/app/something/login.data  /login.data"
+      method="POST"
+    >
+      <input type="text" placeholder="username" name="username" />
+      <input type="password" placeholder="password" name="password" />
+      <input type="date" name="dob" />
+      <input type="hidden" name="auth-token" id="auth" />
+
+      <input type="email" name="email" placeholder="email@something.com" />
+      <textarea name="comment" placeholder="Enter comment here"></textarea>
+      <input type="submit" value="submit form" />
+    </form>
+  </body>
+</html>

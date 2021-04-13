@@ -1,0 +1,42 @@
+#animatedDiv {
+    animation-name: box;
+    animation-duration: 5s;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+    position: relative;
+    background-color: red;
+    width: 25px;
+    height: 25px;
+}
+
+@keyframes box {
+    0%{
+        left:0px;
+        top:0px;
+    }
+    25%{
+        left:50px;
+        top: 0px;
+    }    
+    50%{
+        left:50px;
+        top:50px;
+    }
+    75%{
+        left:0px;
+        top:50px;
+    }
+    100%{
+        left:0px;
+        top:0px;
+    }
+}
+
+@media only screen and (min-device-width: 800px) {
+    :root {
+        background-color: yellowgreen;
+    }
+}
+#something{
+    background
+}
