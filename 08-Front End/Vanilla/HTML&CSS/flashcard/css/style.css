@@ -1,37 +1,60 @@
-.mainContainer {
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css");
 
+.mainContainer {
 }
 .bodyContainer {
-    background-color: #dadde5;
-    height: 1250px;
+  background-color: #dadde5;
+  height: 1250px;
 }
 .nav {
-    background-color: #4b778d;
-    /* height: 65px; */
-    position: relative;
-    display: flex;
-    /* align-content: center; */
-    align-items: center;
-    padding: 1%;
+  background-color: #4b778d;
+  /* height: 65px; */
+  position: relative;
+  display: flex;
+  /* align-content: center; */
+  align-items: center;
+  padding: .1%;
 }
-body{
+body {
+  background-color: #dadde5;
+}
+button{
     background-color: #dadde5;
+  border-width: 0px;
+  border-radius: 10%;
+  vertical-align: middle;
+  position: relative;
 }
 #homeButton {
-    vertical-align: middle;
-    position: relative;
-    background-color: #28b5b5;
-    border-width: 0px;
-    border-radius: 10%;
-    width: max-content;
-    height: max-content;
-    margin-left: 10%;
-    /* margin-top: 50vh; */
-    /* margin: auto; */
+  
+  
+  width: max-content;
+  height: max-content;
+  /* margin-left: 10%; */
+  /* margin-top: 50vh; */
+  /* margin: auto; */
 }
-#githubLink{
+#githubLink {
+  position: relative;
+  vertical-align: middle;
+  text-align: right;
+  margin-right: 1%;
+  
+}
+#loginBtn {
+    width: max-content;
+  height: max-content;
 
 }
-#loginBtn{
-    
+#githubLogo {
+  height: 3%;
+  width: 3%;
+  position: relative;
+  vertical-align: middle;
+  border-radius: 50%;
+
+}
+.rightNav{
+    align-content: right;
+    position: relative;
 }
