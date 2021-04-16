@@ -1,0 +1,19 @@
+{
+  "name": "testing-intro",
+  "version": "1.0.0",
+  "description": "this is to test a javascript project",
+  "main": "index.js",
+  "scripts": {
+    "goofy": "node index.js",
+    "test": "jasmine"
+  },
+  "keywords": [
+    "testing",
+    "jasmine"
+  ],
+  "author": "enterprise",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine": "^3.7.0"
+  }
+}
