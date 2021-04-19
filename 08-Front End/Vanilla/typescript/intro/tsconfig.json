@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "rootDir": "./src",
+        "module": "CommonJS",
+        "target": "es6",
+        "experimentalDecorators": true
+    },
+    "include": ["./src/*.ts"],
+    "exclude": ["node_modules"]
+}
