@@ -3,6 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ApiSomething } from './services/ApiSomething';
+import {HttpClientModule} from '@angular/common/http'
+import { ApiClientService } from './services/api-client.service';
 
 @NgModule({
   declarations: [
@@ -10,9 +13,11 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  // The providers array registers a class with the associated injector
+  providers: [ApiSomething, ApiClientService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
