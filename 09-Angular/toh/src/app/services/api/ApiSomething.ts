@@ -2,7 +2,7 @@
 
 export class ApiSomething{
     constructor(){
-
+        console.log("constructing something");
     }
 
     print(){

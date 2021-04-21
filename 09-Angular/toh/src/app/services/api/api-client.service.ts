@@ -7,7 +7,7 @@ import { ApiSomething } from './ApiSomething';
 @Injectable({
   // provides a lazy loading for your services. This is a backwards 
   //    declaration of a service
-  providedIn: 'platform'
+  providedIn: 'root'
 })
 export class ApiClientService {
   constructor(
@@ -16,6 +16,8 @@ export class ApiClientService {
 
     getSomething(url:string):any{
       this.httpClient.get(url).toPromise().then(console.log);
+      const subscriber = this.httpClient.get(url).subscribe(console.log)
+      subscriber.unsubscribe();
     }
     
   printApi(){
