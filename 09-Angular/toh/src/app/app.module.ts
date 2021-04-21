@@ -6,10 +6,16 @@ import { AppComponent } from './app.component';
 import { ApiSomething } from './services/ApiSomething';
 import {HttpClientModule} from '@angular/common/http'
 import { ApiClientService } from './services/api-client.service';
+import { ServiceExampleComponent } from './components/service-example/service-example.component';
+import { ColoredDirective } from './directives/enlarge.directive';
+import { StructureArrayExampleComponent } from './components/structure-array-example/structure-array-example.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ServiceExampleComponent,
+    ColoredDirective,
+    StructureArrayExampleComponent
   ],
   imports: [
     BrowserModule,

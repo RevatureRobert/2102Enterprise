@@ -1,0 +1,31 @@
+<ol> my favorite foods
+    <!-- structural directives will change the structure of the
+            dom. They will always be denoted by the *.
+
+            examples include:
+                ngFor
+                ngIf
+                ngSwitchCase
+                ngSwitchDefault
+    -->
+
+
+    <!-- 
+        data binding
+            one way
+                interpolation : {{}}
+                property : []
+                event : ()
+            two way
+                [()]
+     -->
+    <li *ngFor='let item of arr, let i=index'  [id]='i'>{{item | uppercase}} and {{i}}</li>
+</ol>
+
+<div [ngSwitch]='dayOfTheWeek'>
+    <p *ngSwitchCase='"MONDAY"'>Monday</p>
+    <p *ngSwitchCase='"TUESDAY"'>Tuesday</p>
+    <p *ngSwitchCase='"FRIDAY"'>Friday</p>
+    <p *ngSwitchCase='"SATURDAY" || "SUNDAY"'>Week End</p>
+    <p *ngSwitchDefault>Other day that we dont care about</p>
+</div>
