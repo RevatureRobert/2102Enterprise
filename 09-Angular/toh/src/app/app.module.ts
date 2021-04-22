@@ -26,7 +26,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     TohFormComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
