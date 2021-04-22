@@ -4,12 +4,16 @@ import { CommonModule } from '@angular/common';
 import { FeaturePackedRoutingModule } from './feature-packed-routing.module';
 import { SampleOneComponent } from './sample-one/sample-one.component';
 import { SampleTwoComponent } from './sample-two/sample-two.component';
+import { HeyComponent } from './hey/hey.component';
+import { HeyyaComponent } from '../heyya/heyya.component';
 
 
 @NgModule({
   declarations: [
     SampleOneComponent,
-    SampleTwoComponent
+    SampleTwoComponent,
+    HeyComponent,
+    HeyyaComponent
   ],
   imports: [
     CommonModule,
