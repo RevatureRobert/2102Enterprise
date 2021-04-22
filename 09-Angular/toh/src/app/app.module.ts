@@ -7,6 +7,7 @@ import { ServiceExampleComponent } from './components/service-example/service-ex
 import { StructureArrayExampleComponent } from './components/structure-array-example/structure-array-example.component';
 import { ColoredDirective } from './directives/enlarge.directive';
 import { ApiSomething } from './services/api/ApiSomething';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { ApiSomething } from './services/api/ApiSomething';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
   // The providers array registers a class with the associated injector
   providers: [ApiSomething],
